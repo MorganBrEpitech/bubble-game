@@ -1,0 +1,23 @@
+body {
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+}
+
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    /*background: red;*/
+    animation: anim 10s forwards;
+}
+
+@keyframes anim {
+    to {
+        top: -300px;
+        left: var(--left);
+        background: var(--bgcolor);
+    }
+}
